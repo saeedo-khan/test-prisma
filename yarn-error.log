@@ -1,0 +1,74 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\saed\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @prisma/engines
+
+PATH: 
+  C:\Users\saed\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\saed\bin;C:\Program Files\Python311\Scripts;C:\Program Files\Python311;C:\Program Files\Eclipse Adoptium\jdk-11.0.13.8-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\Program Files\dotnet;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs;C:\Users\saed\.pyenv\pyenv-win\bin;C:\Users\saed\.pyenv\pyenv-win\shims;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\saed\AppData\Local\Microsoft\WindowsApps;C:\Users\saed\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files (x86)\Manymo\bin;C:\Program Files (x86)\Manymo;C:\Program Files\heroku\bin;C:\Users\saed\.dotnet\tools;C:\php-8.1.13-Win32-vs16-x86;C:\Users\saed\AppData\Roaming\Composer\vendor\bin;C:\Users\saed\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  14.17.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.npmjs.org/@prisma%2fclient: tunneling socket could not be established, cause=getaddrinfo ENOTFOUND 1080
+      at ClientRequest.onError (C:\Users\saed\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:152376:17)
+      at Object.onceWrapper (events.js:482:26)
+      at ClientRequest.emit (events.js:375:28)
+      at Socket.socketErrorListener (_http_client.js:475:9)
+      at Socket.emit (events.js:375:28)
+      at emitErrorNT (internal/streams/destroy.js:106:8)
+      at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+      at processTicksAndRejections (internal/process/task_queues.js:82:21)
+
+npm manifest: 
+  {
+    "name": "instapp_server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "start": "nodemon src/index.ts",
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "tsc": "tsc"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "@prisma/client": "^4.9.0",
+      "bcryptjs": "^2.4.3",
+      "cloudinary": "^1.31.0",
+      "cookie-parser": "^1.4.6",
+      "cors": "^2.8.5",
+      "dotenv": "^16.0.1",
+      "express": "^4.18.1",
+      "jsonwebtoken": "^8.5.1",
+      "moment": "^2.29.4",
+      "multer": "^1.4.5-lts.1",
+      "multer-storage-cloudinary": "^4.0.0"
+    },
+    "devDependencies": {
+      "@types/bcrypt": "^5.0.0",
+      "@types/bcryptjs": "^2.4.2",
+      "@types/cookie-parser": "^1.4.3",
+      "@types/cors": "^2.8.12",
+      "@types/express": "^4.17.13",
+      "@types/jsonwebtoken": "^8.5.8",
+      "@types/multer": "^1.4.7",
+      "@types/node": "^18.11.18",
+      "nodemon": "^2.0.20",
+      "prisma": "^4.9.0",
+      "ts-node": "^10.9.1",
+      "typescript": "^4.9.5"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
